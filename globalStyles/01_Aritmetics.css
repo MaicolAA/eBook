@@ -1,0 +1,45 @@
+.container {
+  padding-top: 5rem;
+}
+
+.main-title {
+  text-align: center;
+  color: yellow;
+  background-color: #ff92f0;
+}
+
+.second-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #cdfeff;
+}
+
+.separator .div1 {
+  max-width: 25%;
+  max-height: 9px;
+  background-image: linear-gradient(to right, white, #1e90ff);
+}
+
+.column .row1 {
+  color: #1e90ff;
+}
+
+.column .row2 {
+  color: white;
+  background-color: #1e90ff;
+}
+
+.billion {
+  max-width: auto;
+  max-height: auto;
+  border: 1px solid red;
+  border-radius: 20px;
+  background-color: #f9f96c;
+}
+
+.separator2 {
+  margin-top: 1rem;
+  height: 100px;
+  background-color: #ff92f0;
+}
