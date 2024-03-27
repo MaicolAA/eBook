@@ -1,5 +1,16 @@
-.container {
-  padding-top: 5rem;
+.container1 {
+  max-width: 500px;
+  background-color: aqua;
+}
+
+.container2 {
+  max-width: 465px;
+  background-color: #ff92f0;
+}
+
+.container3 {
+  max-width: 460px;
+  background-color: white;
 }
 
 .main-title {
@@ -36,10 +47,22 @@
   border: 1px solid red;
   border-radius: 20px;
   background-color: #f9f96c;
+  margin-bottom: 0.5rem;
 }
 
 .separator2 {
-  margin-top: 1rem;
-  height: 100px;
+  border-color: #ff92f0;
+  margin-top: 0.5rem;
+  height: 80px;
   background-color: #ff92f0;
 }
+
+.text1 {
+  font-size: 0.8rem;
+  max-width: 250px;
+}
+
+.text2 {
+  font-size: 0.8rem;
+}
+
