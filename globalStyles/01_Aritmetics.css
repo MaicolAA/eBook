@@ -93,3 +93,37 @@
   Page 02
 */
 
+.textxxs {
+  font-size: 0.7rem;
+}
+
+.mytable {
+  height: 5rem;
+  width: 21rem;
+}
+
+.divtable {
+  padding-right: 2rem;
+ padding-top: 0.2rem;
+}
+
+.titlesm{
+  background-color: #1e90ff;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+  width: 21rem;
+  border-radius: 0.2rem;
+}
+
+
+.td-content {
+  display: inline-flex; 
+  letter-spacing: 0; 
+}
+
+.romano {
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
