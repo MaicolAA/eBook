@@ -1,15 +1,5 @@
-.container1 {
-  max-width: 500px;
-  background-color: aqua;
-}
-
-.container2 {
-  max-width: 465px;
-  background-color: #ff92f0;
-}
-
-.container3 {
-  max-width: 460px;
+.container {
+  padding: 7px;
   background-color: white;
 }
 
@@ -23,16 +13,24 @@
   font-weight: 500;
   font-size: 1.3rem;
   text-align: center;
-  background-color: #cdfeff;
+  background-color: #c6ecf7;
 }
 
 .separator .div1 {
-  max-width: 25%;
+  max-width: 43%;
   max-height: 9px;
   background-image: linear-gradient(to right, white, #1e90ff);
 }
 
+.div2 {
+  max-height: 5px;
+  background-color: #1e90ff;
+  margin-top: -1px;
+}
+
 .column .row1 {
+  text-align: end;
+  max-width: 225px;
   color: #1e90ff;
 }
 
@@ -65,4 +63,3 @@
 .text2 {
   font-size: 0.8rem;
 }
-
