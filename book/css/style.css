@@ -11,7 +11,7 @@
   --left_right_margin_pages: 30px;
 
   /* 640px =  --pages_container_width / 2 */
-  --page_width: 640px; 
+  --page_width: 640px;
 
   --page-left-margin: 50px;
   --page-right-margin: 50px;
@@ -48,6 +48,8 @@ body {
 
   --toc-button-border: #8e9091;
   --switch-background-color: #ffffff;
+  --light-blue: #c6ecf7;
+  --rose: #ce527e;
 }
 /* dark colors */
 body.dark {
@@ -77,19 +79,85 @@ body.dark {
 }
 
 /** reset styles */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,8 +166,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 /** end of reset code */
@@ -128,19 +205,20 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  min-height: -webkit-fill-available;  
+  min-height: -webkit-fill-available;
   max-height: 100vh;
-  max-height: -webkit-fill-available;  
+  max-height: -webkit-fill-available;
   background-color: var(--book-background-color);
 }
 .page {
   position: relative;
   background-color: var(--page_color);
   text-align: justify;
-  width:  var(--page_width);
-  min-width:  var(--page_width);
+  width: var(--page_width);
+  min-width: var(--page_width);
   height: var(--pages_container_height);
-  padding: var(--page-top-margin) var(--page-right-margin) var(--page-bottom-margin) var(--page-left-margin);
+  padding: var(--page-top-margin) var(--page-right-margin)
+    var(--page-bottom-margin) var(--page-left-margin);
   overflow: hidden;
 }
 
@@ -157,7 +235,8 @@ pageref {
   color: var(--link-text-color);
   cursor: pointer;
 }
-pageref, ref {
+pageref,
+ref {
   display: inline;
 }
 
@@ -290,7 +369,8 @@ pageref, ref {
 }
 
 /*  */
-sup, sub {
+sup,
+sub {
   font-size: 65%;
 }
 b {
@@ -302,14 +382,20 @@ i {
 strong {
   font-weight: bold;
 }
-h1, h2, h3, h4, p {
+h2,
+h3,
+h4,
+p {
   padding: 0;
 }
 h1 {
-  margin: 0 0 0.7em 0;
+  padding: 10px;
+  background-color: var(--light-blue);
+  margin: 0 0 0.5em 0;
   color: var(--h1-color);
-  font-size: 160%;
+  font-size: 2em;
   font-weight: bold;
+  text-align: center;
 }
 h2 {
   margin: 0 0 0.7em 0;
@@ -329,9 +415,10 @@ h4 {
   font-size: 110%;
 }
 p {
-  margin: 0 0 1em 0;
+  margin: 0 0 0 0;
 }
-ol, ul {
+ol,
+ul {
   margin: 1em 0;
   padding: 0;
   padding-left: 4ch;
@@ -344,7 +431,8 @@ ol ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-a, code {
+a,
+code {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -355,11 +443,15 @@ code {
   margin: 0;
   padding: 0;
 }
-tbody, tr, th, td {
+tbody,
+tr,
+th,
+td {
   border: inherit;
 }
 
-.note, .num_block {
+.note,
+.num_block {
   margin: 0 0 1em 0;
   padding-left: 1.5ch;
   line-height: 1.2;
@@ -388,11 +480,12 @@ tbody, tr, th, td {
 
 body.dark img,
 body.dark iframe {
-  filter: contrast(0.90) brightness(0.90);
+  filter: contrast(0.9) brightness(0.9);
 }
 
 iframe {
   border: none;
+  height: 800px;
 }
 
 video {
@@ -400,7 +493,8 @@ video {
   margin: 0 auto 1em auto;
 }
 
-.btn_expand, .btn_link {
+.btn_expand,
+.btn_link {
   position: absolute;
   text-align: left;
   width: 30px;
@@ -416,7 +510,7 @@ video {
   background-size: 75%;
   background-position: center;
   cursor: pointer;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .interactive {
@@ -426,8 +520,8 @@ video {
   padding: var(--interactive-margin);
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
-  transform: translate3d(0,0,0);
-  
+  transform: translate3d(0, 0, 0);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,7 +630,8 @@ bibitem {
   display: flex;
 }
 
-#btn_dark, #btn_light {
+#btn_dark,
+#btn_light {
   width: 35px;
   height: 35px;
 }
@@ -548,7 +643,7 @@ bibitem {
   width: 50px;
   height: 30px;
   background-color: var(--switch-background-color);
-  border: 1px solid #D9DADC;
+  border: 1px solid #d9dadc;
   border-radius: 50px;
   box-shadow: inset -20px 0 0 0 var(--switch-background-color);
   margin: 0 1em;
@@ -563,7 +658,7 @@ bibitem {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  box-shadow: 2px 4px 6px rgba(0,0,0,0.4);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
 }
 .switch:checked {
   box-shadow: inset 20px 0 0 0 #4ed164;
@@ -571,7 +666,7 @@ bibitem {
 }
 .switch:checked:after {
   left: 21px;
-  box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+  box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
 /* change theme images */
@@ -683,6 +778,7 @@ body.dark div:-ms-fullscreen .btn_expand {
 
 p {
   line-height: 1.225;
+  font-size: 0.9em;
 }
 div {
   line-height: 1.18;
@@ -691,7 +787,9 @@ xmp {
   line-height: 1;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   vertical-align: top;
 }
 table {
@@ -700,6 +798,7 @@ table {
 
 br {
   line-height: 1em;
+  height: 0.5em;
 }
 
 .PDF_anchor {
@@ -728,7 +827,7 @@ br {
   bottom: 0;
   z-index: 10;
 }
- 
+
 /* Style for screen  */
 @media screen {
   body {
@@ -797,9 +896,9 @@ br {
     top: 0;
     width: 100%;
     min-height: 100vh;
-    min-height: -webkit-fill-available;  
+    min-height: -webkit-fill-available;
     max-height: 100vh;
-    max-height: -webkit-fill-available; 
+    max-height: -webkit-fill-available;
     background-color: var(--page_color);
     z-index: 5000;
     padding: 2.5em;
@@ -873,7 +972,7 @@ br {
     display: none;
   }
 }
- 
+
 /* Style for print */
 @media print {
   @page {
