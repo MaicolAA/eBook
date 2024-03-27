@@ -1,17 +1,24 @@
+/*
+* CSS elements page 01
+*/
+
 .container {
   padding: 7px;
   background-color: white;
 }
 
 .main-title {
+  font-size: 1.8rem;
   text-align: center;
-  color: yellow;
-  background-color: #ff92f0;
+  color: rgb(228, 228, 0);
+  background-color: #d53f9a;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .second-title {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
   background-color: #c6ecf7;
 }
@@ -32,34 +39,57 @@
   text-align: end;
   max-width: 225px;
   color: #1e90ff;
+  font-size: 1.4rem;
+  font-weight: 550;
 }
 
 .column .row2 {
+  font-size: 1.4rem;
   color: white;
   background-color: #1e90ff;
+  font-weight: 550;
 }
 
 .billion {
   max-width: auto;
   max-height: auto;
   border: 1px solid red;
-  border-radius: 20px;
-  background-color: #f9f96c;
+  border-radius: 1rem;
+  background-color: #f8f893;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .separator2 {
-  border-color: #ff92f0;
+  border-color: #d53f9a;
   margin-top: 0.5rem;
   height: 80px;
-  background-color: #ff92f0;
+  background-color: #d53f9a;
 }
 
 .text1 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   max-width: 250px;
+  padding-top: 1rem;
 }
 
 .text2 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  padding-top: 1rem;
 }
+
+.barra {
+  padding-top: 8rem;
+  border-left-width: 2px;
+  height: 15vh;
+  border-color: #d53f9a;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+/*
+  Page 02
+*/
+
