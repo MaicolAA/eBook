@@ -112,7 +112,7 @@
   color: white;
   font-weight: 500;
   font-style: italic;
-  width: 21rem;
+  width: 21.3rem;
   border-radius: 0.2rem;
 }
 
@@ -124,8 +124,33 @@
 .romano {
   margin-right: 1rem;
   padding-left: 0.5rem;
+  color: #1e90ff;
+  font-weight: 600;
 }
 
+.casilla1 {
+  background-color: #db83b8;
+}
+
+.casilla2 {
+  background-color: #ecb9d8;
+}
+
+.casilla3 {
+  background-color: #96dfdb;
+}
+
+.casilla4 {
+  background-color: #c7e6e4;
+}
+
+.casilla5 {
+  background-color: #f3e69a;
+}
+
+.casilla6 {
+  background-color: #f0ecd7;
+}
 
 
 /*
