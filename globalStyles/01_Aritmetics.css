@@ -246,10 +246,49 @@
 }
 
 
+/*
+*Page 04 Aritmetics
+*/
+
+
 .barra3 {
   border-left-width: 2px;
-  height: 38vh;
+  height: 34vh;
   border-color: #d53f9a;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+
+.separator3 {
+  padding-top: 1rem;
+}
+
+.barra4 {
+  border-left-width: 2px;
+  height: 26vh;
+  border-color: #d53f9a;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 2rem;
+}
+
+
+.elementYellow {
+  background-color: #f3e69a;
+  text-align: center;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  margin: 2px; 
+  box-shadow: 0 0 0 2px #8ee7db; 
+}
+
+
+.bluetext {
+  color: #6de6d5;
+}
+
+.elementNumerosEnteros {
+  font-size: 0.6rem;
+  padding-top: 1rem;
 }
