@@ -88,7 +88,6 @@
   margin-top: 1rem;
 }
 
-
 /*
   Page 02
 */
@@ -104,10 +103,10 @@
 
 .divtable {
   padding-right: 2rem;
- padding-top: 0.2rem;
+  padding-top: 0.2rem;
 }
 
-.titlesm{
+.titlesm {
   background-color: #1e90ff;
   text-align: center;
   color: white;
@@ -117,14 +116,32 @@
   border-radius: 0.2rem;
 }
 
+.td-content {
+  width: 33%; 
+  max-width: 33%;
+} 
 
 .romano {
   margin-right: 1rem;
-  padding-left: 0.2rem;
+  padding-left: 0.5rem;
 }
 
 
-.td-content {
-  width: 33%; 
-  max-width: 33%; 
+
+/*
+  page 03
+*/
+
+.page {
+  font-size: 0.7rem;
+}
+
+.separador {
+  padding-top: 8rem;
+  border-left-width: 2px;
+  height: 28vh;
+  border-color: #d53f9a;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
 }
