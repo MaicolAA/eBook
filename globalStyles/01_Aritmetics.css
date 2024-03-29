@@ -304,3 +304,58 @@
   background-image: linear-gradient(to right, white, #1e90ff);
 }
 
+
+
+/*
+* Page 05
+*/
+
+.elementYellow2 {
+  background-color: #f5ecbd;
+  text-align: center;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  margin: 2px; 
+  box-shadow: 0 0 0 2px #8ee7db; 
+}
+
+.container-p5 {
+  font-size: 0.83rem;
+}
+
+.div4 {
+  width: 45%;
+  max-height: 0.6rem;
+  background-image: linear-gradient(to left, white, #1e90ff);
+}
+
+
+
+.row5 {
+  text-align: end;
+  width: 40rem;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: white;
+  background-color: #1e90ff;
+}
+
+.row6 {
+  font-size: 1.4rem;
+  color: #1e90ff;
+  font-weight: 550;
+  background-color: white;
+}
+
+.textpage5 {
+  font-size: 0.78rem;
+}
+
+.barra5 {
+  border-left-width: 2px;
+  height: 38vh;
+  border-color: #d53f9a;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 2rem;
+}

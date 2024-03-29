@@ -2,42 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
-
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg" />
+    <link rel="stylesheet" href="../../globalStyles/01_Aritmetics.css" />
     <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
-    <div class="page" num-type-arabic="true">
-        <h1 id="prefacio">Prefacio</h1>
-    
-        <p class="font-thin">Esta es una breve muestra que ilustra las capacidades básicas del núcleo de presentación de libros interactivos.
-            Los libros se pueden adaptar según las preferencias del autor y también incorporar elementos adicionales para
-            potenciar su presentación. Este ejemplo presenta el uso de la biblioteca <a href="https://katex.org/"
-                target="_blank">$\KaTeX$</a> para el uso de fórmulas matemáticas y <a
-                href="https://github.com/KaTeX/KaTeX/blob/main/contrib/mhchem/README.md" target="_blank">mhchem.js</a> para
-            el desplegado de fórmulas químicas. Se recomienda evitar cambios en los archivos ubicados dentro del directorio
-            <code>book</code>, ya que dichos archivos son los responsables del correcto funcionamiento del libro y cuando se
-            realizan actualizaciones estos archivos son reemplazados.</p>
-    
-        <p>Un archivo zip con el código fuente de este ejemplo está disponible para su descarga desde <a
-                href="https://github.com/jlongi/libro_interactivo/releases/latest/download/libro_interactivo_katex.zip">aquí</a>.
-            El código del núcleo del libro se encuentra alojado en el siguiente repositorio de GitHub: <a
-                href="https://github.com/jlongi/libro_interactivo"
-                target="_blank">https://github.com/jlongi/libro_interactivo</a>, cualquier corrección, sugerencia o cambio
-            favor de reportarlo en el repositorio para su evaluación y posible incorporación.</p>
-    
-        <p>Para obtener más información acerca del funcionamiento de este libro interactivo, es recomendable consultar el
-            contenido del archivo <code>index.html</code>, donde se proporcionan algunos comentarios y explicaciones sobre
-            diferentes aspectos del libro, por ejemplo cómo funciona la tabla de contenidos.</p>
-    </div>
+    <div class="page">
+        <div class="flex pt-5">
+            <div class="mr-4 w-1/2 container-p5">
+                <p class="textpage5">
+                <p class="subtitles">Multiplicación de Enteros:</p>
+                Sean dos Números Enteros <strong>(a,b)</strong> y <strong>(c,d)</strong> se define el Producto de ambos
+                así:
+                <p class="elementYellow2 text-center">
+                    <strong>
+                        (a,b) <span class="bluetext"> x </span> (c,d) <span class="bluetext"> = </span> (ac<span
+                            class="bluetext">
+                            + </span> bd, ad <span class="bluetext"> + </span> bc)
+                    </strong>
+                </p>
+                El Producto tendra signo <span class="text-pink-500">POSITIVO</span> si los signos de ambos son igualles
+                mientras que el Producto tendrá signo <span class="text-pink-500">NEGATIVO</span> si los signos de ambos
+                números son distintos.
+                La Multiplicación de Números Enteros cumple las mismas Propiedades que la Multiplicación de Números
+                Naturales.
+                </p>
 
+            </div>
+            <hr class="barra3" />
+            <div class="ml-4 w-1/2 container-p5">
+                <p>
+                <p class="subtitles">División de Números Enteros:</p>
+                Para dividir dos Números Enteros se dividen ambos números y al <span
+                    class="text-pink-500">COCIENTE</span> obtenido se le antepone un signo <span
+                    class="text-pink-500">POSITIVO</span> o <span class="text-pink-500">NEGATIVO</span> teniendo en
+                cuenta que si el <span class="text-pink-500">DIVIDENDO</span> y el <span
+                    class="text-pink-500">DIVISOR</span> tienen el mismo signo, el <span
+                    class="text-pink-500">COCIENTE</span> tendrá signo positivo mientras que si el dividendo y el
+                divisor tienen signos diferentes el <span class="text-pink-500">COCIENTE</span> tendrá signo negativo.
+                La división de dos números no es siempre un Número Entero. Así entonces <strong> 7 ÷ 2</strong> no es
+                una división exacta dentro de los Enteros.
+
+                </p>
+
+            </div>
+        </div>
+        <div class="separators pt-5">
+            <div class="div4"><br /></div>
+        </div>
+        <div class="flex items-center column">
+            <div class="row5 w-full pr-3">Los Números </div>
+            <div class="row6 w-full">Primos</div>
+        </div>
+        <div class="div2"><br /></div>
+
+        <div class="flex">
+            <div class="mr-4 w-1/2 pt-8">
+                <p class="textpage5">
+                    <span class="subtitles">Múltiplos y Divisores:</span>
+                    Un número <strong>'m'</strong> es <span class="text-pink-500">MÚLTIPLO</span> de un número
+                    <strong>'n'</strong> cuando al efectuar la división <strong>m÷n</strong> el <span
+                        class="text-pink-500">RESTO</span> da cero '<strong>0</strong>'. Ante esto se dice que:
+                    <strong>m</strong> es <span class="text-pink-500">DIVISIBLE</span> por <strong>'n'</strong> o bien
+                    que <strong>'n'</strong> es un <span class="text-pink-500">DIVISOR</span> de <strong>'m'</strong>.
+                    Así <strong>26</strong> es <span class="text-pink-500">MÚLTIPLO</span> de <strong>13</strong> porque
+                    al efectuar la división: <strong>26 ÷ 13</strong> el <span class="text-pink-500">COCIENTE</span> es
+                    <strong>2</strong> y el <span class="text-pink-500">RESTO</span> es '<strong>0</strong>'. También se
+                    puede decir que: <strong>13</strong> es <span class="text-pink-500">DIVISOR</span> de
+                    <strong>26</strong> y que <strong>26</strong> es <span class="text-pink-500">DIVISIBLE</span> por
+                    <strong>13</strong>. Cuando un número es Divisible por sí mismo y por la Unidad se dice que es un
+                    Número <span class="text-pink-500">PRIMO</span> . Entonces, <strong>7</strong> es un número <span
+                        class="text-pink-500">PRIMO</span> porque sólo es <span class="text-pink-500">DIVISIBLE</span>
+                    por <strong>1</strong> y por <strong>7</strong>. Cuando un número es Divisible por
+                </p>
+
+
+            </div>
+            <hr class="barra5" />
+            <div class="ml-4 w-1/2 pt-7 pr-3">
+                <p class="textpage5">
+                    Otros números además de la Unidad y de sí mismo se llama <span class="text-pink-500">NÚMERO
+                        COMPUESTO</span>. Así, <strong>6</strong> es un número <span
+                        class="text-pink-500">COMPUESTO</span> porque aparte de ser Divisible por <strong>1</strong> y
+                    por <strong>6</strong> también lo es por <strong>2</strong> y por <strong>3</strong>. Todo número
+                    Compuesto puede escribirse como Producto de Números <span class="text-pink-500">PRIMOS</span>. Para
+                    descomponer un número en el Producto de sus <span class="text-pink-500">FACTORES PRIMOS</span> se
+                    escribe el número y se traza a su derecha una recta vertical a cuya derecha se escribe el menor de
+                    los Divisores que sea un número <span class="text-pink-500">PRIMO</span>, EL <span
+                        class="text-pink-500">COCIENTE</span> resultante se escribe bajo el número y se vuelve a dividir
+                    por el menor de sus Divisores que sea un número.
+                </p>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
