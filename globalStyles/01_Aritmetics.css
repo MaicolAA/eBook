@@ -68,13 +68,13 @@
 }
 
 .text1 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   max-width: 250px;
   padding-top: 1rem;
 }
 
 .text2 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 1rem;
 }
 
@@ -290,5 +290,17 @@
 
 .elementNumerosEnteros {
   font-size: 0.6rem;
-  padding-top: 1rem;
+  background-color: #c9ebe6;
+  border-top-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  margin: 2px; 
+  box-shadow: 0 0 0 2px #75e0d2; 
+
 }
+
+.separator .div3 {
+  max-width: 41.7%;
+  max-height: 9px;
+  background-image: linear-gradient(to right, white, #1e90ff);
+}
+
