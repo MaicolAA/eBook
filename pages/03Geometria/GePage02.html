@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 
+    <title>Geometría</title>
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+</head>
+    <body>
+    <article class="flex">
+        <div class="flex-1">
+            <p><span class="font-bold text-lg">Una Superficie</span> Tiene <span class="text-pink-500">LONGITUD</span> y <span class="text-pink-500">ANCHURA</span> aunque carece de Espesor. Una Superficie Plana o un Plano es una Superficie tal que si cualquiera Recta del Espacio tiene en común con ella dos de sus Puntos, los tendrá todos comunes, es decir, toda la Recta se halla contenida en el Plano. Una Superficie se puede considerar también como el conjunto de Puntos que se extienden en dos Dimensiones, puede ser Plana o Curva, Finita o Infinita. Por ejemplo, el Plano z = 0 en Coordenadas Cartesianas Tridimensionales es una Superficie Plana Infinita; el exterior de una Esfera es una Superficie Curva Finita.</p>
+            <br>
+            <p>La <span class="text-pink-500">GEOMETRÍA PLANA</span> estudia las <span class="text-pink-500">FIGURAS PLANAS</span>, o aquellas que se pueden dibujar sobre una Superficie Plana. La <span class="text-pink-500">GEOMETRÍA ESPACIAL</span> estudia los elementos geométricos en <span class="text-pink-500">TRES DIMENSIONES</span>. Toda Recta de un Plano divide a dicho Plano en dos regiones que se llaman <span class="text-pink-500">SEMIPLANOS</span>.</p>
+            <br>
+            <p><span class="font-bold text-lg">Un Ángulo</span> es la abertura formada por dos semirrectas o lados del Ángulo, con un mismo origen llamado <span class="text-pink-500">VÉRTICE</span>. Los Ángulos se miden en <span class="text-pink-500">GRADOS</span> o en <span class="text-pink-500">RADIANES</span>. Una vuelta completa cubre 360 grados (360*). Una recta forma un Ángulo de 180 grados (180°) y un Ángulo Recto 90 grados (90").</p>
+
+
+        </div>
+        <hr class="border-l-2 border-pink-500 h-[85vh] mx-4">
+        <div class="flex-1">
+            <p>El Ángulo entre una Recta y un Plano es el Ángulo que forma la Recta con su Proyección <span class="text-pink-500">ORTOGONAL</span> sobre el Plano. El ángulo de dos Planos es el formado por Rectas perpendiculares a la <span class="text-pink-500">ARISTA</span> común por un pun- to de ésta (una Recta en cada Plano). El Ángulo de 2 Curvas que se cortan es el de sus <span class="text-pink-500">TANGENTES</span> en el punto de <span class="text-pink-500">INTERSECCIÓN</span>.</p>
+        </div>
+    </article>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<!-- Agrega los scripts de Bootstrap y JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+

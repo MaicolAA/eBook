@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 
+    <title>Geometría</title>
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+</head>
+    <body>
+        <article class="flex">
+            <div class="flex-1">
+                <p>Un <span class="text-pink-500">GRADO</span> equivale en el <span class="text-pink-500">SISTEMA SEXAGESIMAL</span> (el más utilizado) a 1/360 de la Circunferencia. Cada Grado Sexagesimal se divide en 60 partes iguales llamadas <span class="text-pink-500">MINUTOS</span>, y cada Minuto, se divide en 60 partes iguales o <span class="text-pink-500">SEGUNDOS</span>. La Unidad de un Ángulo Plano es igual a la Noventava parte de un ángulo Recto 0,9°. En el Sistema <span class="text-pink-500">CIRCULAR</span>, EI <span class="text-pink-500">RADIÁN</span>, (Simbolo: rad), es la Unidad de medida de un ángulo plano y es el ángulo subtendido en el centro de un círculo por un arco de longitud igual al radio del círculo.</p>
+            </div>
+            <hr class="border-l-2 border-pink-500 h-[60vh] mx-4">
+            <div class="flex-1">
+                <p>Este sistema también se fundamenta en que la longitud de la Circunferencia es <span class="font-bold text-lg">2π</span> veces la longitud de su Radio.
+                Existe otro sistema llamado <span class="text-pink-500">CENTESIMAL</span>, en el que la Circunferencia se divide en 400 partes iguales o Grados Centesimales, (1g) y cada Grado está dividido en 100 partes iguales o Minutos Centesimales,(1m)que a su vez se dividen en 100 Segundos Centesimales, (1s).</p>
+            </div>
+        </article>
+        <h2>Triangulo</h2>
+        <article class="flex">
+            <div class="flex-1">
+                <p>Es la porción de Plano limitada por 3 Rectas que se cortan 2 a 2; o simplemente una figura plana con 3 lados. Los ángulos interiores de un Triángulo suman 180 grados. Los 3 Lados y ángulos de un</p>
+            </div>
+            <hr class="border-l-2 border-pink-500 h-[25vh] mx-4">
+            <div class="flex-1">
+                <p>Triángulo <span class="text-pink-500">EQUILÁTERO</span> son iguales. Un Triángulo <span class="text-pink-500">ISÓSCELES</span> tiene 2 Lados y 2 Ángulos iguales. Un Triángulo <span class="text-pink-500">ESCALENO</span> tiene desiguales sus 3 Lados y sus 3 Ángulos. Un Triángulo <span class="text-pink-500">RECTÁNGULO</span></p>
+            </div>
+            <hr class="border-l-2 border-pink-500 h-[25vh] mx-4">
+            <div class="flex-1">
+                <p>tiene un Ángulo de 90° y los otros son por tanto <span class="text-pink-500">COMPLEMENTARIOS</span>. En un Triángulo <span class="text-pink-500">ACUTÁNGULO</span>, todos los Ángulos son menores de 90°. En un Triángulo <span class="text-pink-500">OBTUSÁNGULO</span> hay un Ángulo mayor de 90°.</p>
+            </div>
+        </article>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<!-- Agrega los scripts de Bootstrap y JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
