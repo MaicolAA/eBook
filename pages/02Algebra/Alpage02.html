@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <article>
+        <section>
+            <h3>Propiedades en la Intersección:</h3>
+            <div class="centrado">
+                <p>
+                    La intersección de Conjuntos cumple las propiedades;
+                    <p>Clausurativa: An A = A </p>
+                    <p>Asociativa: An (Bn C) = (An B)n C</p> 
+                    <p>Intersección con el Conjunto Vacio: An Ø = Ø </p>
+                    <p>Absorción: Si ACB => AnB = A</p> 
+                    <p>Conmutativa: An B = BNA</p>
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>Propiedades en la Unión:</h3>
+            <div class="centrado">
+                <p>
+                    La Unión de Conjuntos cumple las propiedades; 
+                    <p>Clausurativa: AU A = A </p>
+                    <p>Asociativa: AU (BU C) = (AU B)U C </p>
+                    <p>Unión con el Conjunto Vacio: AU Ø = A</p> 
+                    <p>Absorción: Si ACB => AUB = B </p>
+                    <p>Conmutativa: AU B = BUA</p>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Propiedades Combinadas:</h3>
+            <div class="centrado">
+                <p>
+                    La intersección de Conjuntos cumple las pro piedades;
+                    <p>Distributiva respecto de la Intersección: AU (BN C) = (AU B)n (AUC)</p>
+                    <p>Distributiva respecto de la Unión: An (BU C) = (AN B)U (ANC)</p>
+                    <p>Simplificativa respecto de la Intersección: AU (BN A) = A</p>
+                    <p>Simplificativa respecto de la Unión: An (BU A) = A</p>
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>Relaciones entre Conjuntos:</h3>
+            <div class="centrado">
+                <p>
+                    <p>•REFLEXIVA: SI VXE A, (x, x) E AX A  </p>
+                    <p>•SIMÉTRICA: SI V (x,y) € AxA => (y,x)E AxA</p> 
+                    <p>•TRANSITIVA: Si V(x,y)E AXA,A (y,z)E AxA => (x,z) € AXA</p>
+                    <p>•DE EQUIVALENCIA: Cuando es simultáneamente Reflexiva, Simétrica y Transitiva.</p> 
+                    <p>•DE ORDEN: Cuando es Reflexiva, Antisimétrica y Transitiva</p>
+
+                    <p>
+                        Función: Es la relación entre los elementos de un conjunto o la imagen
+                        y los de otro conjunto o el dominio. A cada elemento del dominio, 
+                        corresponde un elemento del primer conjunto sobre el cual es aplicado o 
+                        representado por la función. - f (A cada elemento x corresponde un único y)
+                    </p> 
+                    f = [(x,y) / y = f (x)] y: es una función de x
+
+                    <p>
+                        Función Inyectiva: A elementos distintos del dominio tiene una única imagen
+                        en el rango; ningún elemento del conjunto B posee más de un original.
+                    </p>
+
+                    <p>
+                        Función Sobreyectiva: Cada elemento del rango es imagen de uno o más elementos 
+                        del dominio o conjunto Original.
+                    </p>
+
+                    <p>
+                        Función Biyectiva: Cuando es inyectiva y sobreyectiva al mismo tiempo;                    
+                        cada imagen tiene un único original y cada original tiene una sola imagen.
+                    </p>
+                </p>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

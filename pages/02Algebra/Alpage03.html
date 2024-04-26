@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>Los Polinomios</title>
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Los Polinomios</h1>
+    <article>
+        <section>
+            <div class="centrado">
+                <p>
+                    <p>Es la suma de múltiplos de potencias enteras de una variable. Un polinomio en la variable 'x' se expresa así:</p>
+                    <div class="cuadro">
+                        <p>a0x^n + a1x^n-1 + a2x^n-2 + ...</p>
+                    </div>
+                    <p>
+                        Donde a0 , a1, etc., Son constantes y "n" es el mayor exponente de "x", que se conoce como gardo del Polinomio. 
+                        Cada uno de los sumandos expresados en una Función Polinomica se llama monomio o término.
+                        Para Sumar Polinomios se escriben los Sumandos uno luego de los otros con sus signos correspondientes y luego 
+                        se reducen los términos semejantes si los hay.
+                    </p>
+                </p>
+            </div>
+        </section>
+        <section class="centrado">
+            <h3>Ejemplo:</h3>
+            <div>
+                <p>4x^2y^2-5xy^2; 3xy^2-7x^2y^2; 3xy^2-x^2y^2</p>
+                <p>
+                    La solución se logra colocando todos los términos de los Polinomios                   
+                    unos después de los otros con sus signos correspondientes:
+                </p>
+                <p>4x^2y^2-5xy^2-3xy^2-7x^2y^2-3xy^2-x^2y^2</p>
+                <p>Al reducir los Términos semejantes resulta:</p> 
+                <p>-4x^2y^2+x^2y^2</p>                     
+                <p>
+                    Para restar:
+                    Para Restar Polinomios se escribe el Minuendo con sus propios signos y 
+                    luego el Sustraendo con todos sus signos cambiados y luego se reducen los 
+                    términos semejantes si los hay.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>Ejemplo:</h3>
+            <div class="centrado">
+                <div>
+                    <p>7x2-4x-3 y 5x2-x-1</p> 
+                    <p>(7x2-4x-3) - ( 5x2-x-1)</p>
+                    <p>O sea, 7x2-4x-3-5x2+x+1</p>
+                    <p>Reduciendo términos semejantes tendremos como resultado:</p> 
+                    <p>2x2-3x-2</p> 
+                    <p>
+                        Para multiplicar un polinomio por otro, se multiplican todos los términos 
+                        del multiplicando por cada uno de los términos del multiplicador y, 
+                        luego se hace la suma algebraica de todos los productos parciales obtenidos. 
+                        Hay una serie de resultados que conviene tener en cuenta para facilitar las 
+                        operaciones. 
+                    </p>
+            </div>
+        </section>
+    </article>
+    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

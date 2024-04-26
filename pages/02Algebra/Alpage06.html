@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>Álgebra</title>
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Álgebra</h1>
+
+    <h3>Teoría de Conjuntos</h3>
+    <article>
+        <div>
+            <section class="centrado">
+                <p>
+                    Cada uno de los objetos que forman parte de un conjunto se llama elemento.
+                    Un conjunto se define por extensión cuando se enumeran todos y cada uno de
+                    los elementos que lo forman, y se define por comprensión, cuando se enuncian
+                    todas las propiedades comunes de sus elementos. Para representar los conjuntos
+                    se usan letras mayúsculas en tanto que su elementos se suelen denotar con letras
+                    minúsculas. Para representar gráficamente los conjuntos de usan Diagramas de VENN,
+                    que son lineas curvas cerradas con los elementos dentro. Cuando un conjunto no tiene
+                    elementos, se dice que es vacío, y se denota: Ø. Cuando los elementos de un conjunto A
+                    pertenecen también a otro conjunto B se dice que A es un subconjunto de B, y se indica: ACB
+                    Si N es el conjunto de los números Naturales y P es la propiedad "ser múltiplo de 5",
+                    los números que cumplen esta propiedad se denotan: {x| x es múltiplo de 5}. Dados dos conjuntos
+                    A y B se llama conjunto complementario de A con respecto a B al conjunto formado por todos los
+                    elementos de B que no pertenecen a A. Al conjunto que contiene todos los elementos de dos o más
+                    conjuntos
+                    se le llama unión.
+                <div class="cuadro">
+                    <p>Representación del Conjunto A Unión B</p>
+                </div>
+                Al conjunto de los elementos comunes a dos o más conjuntos se le llama intersección
+                <div class="cuadro">
+                    <p>Representación del Conjunto A intersección B</p>
+                </div>
+                Se dice que A y B son disyuntivos cuando no tienen ningún elemento común, es decir cuando
+                la intersección de ambos conjuntos es el conjunto vacío.
+                <div class="cuadro">
+                    <p>A'= Complemento del Conjunto A con respecto al Conjunto Universal</p>
+                </div>
+                </p>
+            </section>
+
+        </div>
+    </article>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

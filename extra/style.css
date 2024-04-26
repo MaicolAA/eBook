@@ -122,3 +122,15 @@ table td {
 body.dark .invertcolor {
   filter: invert(1) hue-rotate(180deg);
 }
+
+.cuadro {
+  background-color: #f0f0f0; 
+  border: 2px solid #ccc; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+}
+
+article {
+  column-count: 2; 
+  column-gap: 40px; 
+}
