@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- se precarga la imagen utilizada para el cargador del libro, en caso de que se utilice -->
+    <link rel="preload" as="image" href="../../images/general/icartesilibri_logo.svg">
+
+    <!-- configuración del libro -->
+    <script>
+        window.book_config = {
+            // parámetro que indica si los capítulos, secciones y figura se auto numeran
+            // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+            // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+            auto_numerate_sections_and_figures: true,
+            // parámetro para que los interactivos se muestren a pantalla completa al presionar el botón de la esquina superior derecha
+            open_interactives_fullscreen: true,
+            // parámetro para usar el id de las referencias bibliográficas en lugar de la autonumeración
+            bibitem_ref_id: false,
+        }
+    </script>
+
+    <!-- núcleo del libro interactivo -->
+    <link rel="stylesheet" href="../../book/css/style.css" type="text/css">
+    <script type="text/javascript" src="../../book/js/book.js" charset="utf-8"></script>
+
+    <!-- personalización del usuario -->
+    <link rel="stylesheet" href="../../extra/fonts.css" type="text/css">
+    <link rel="stylesheet" href="../../extra/style.css" type="text/css">
+
+    <!-- inclusión de la biblioteca KaTex -->
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/katex.min.css" />
+    <script src="../../extra/katex/katex.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../extra/katex/copy-tex.min.css" />
+    <script src="../../extra/katex/copy-tex.min.js"></script>
+    <script src="../../extra/katex/auto-render.min.js"></script>
+
+    <!-- Opcional en caso de requerir formulas químicas -->
+    <script src="../../extra/katex/mhchem.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../../globalStyles/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }, { left: "\\[", right: "\\]", display: true }, { left: "\\(", right: "\\)", display: false }]
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <article>
+        <section>
+            <div class="centrado">
+                <p>
+                    La transposición de términos cumple que cualquier término de una ecuación 
+                    se pueda pasar de un miembro a otro cambiando de signo. Los signos de todos 
+                    los términos de una ecuación se pueden cambiar porque esto equivale a 
+                    multiplicar los 2 miembros por (-1)
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>Para resolver una ecuación de primer grados</h3>
+            <div>
+                <p>1) Se eliminan los radicales si los hay, elevando ambos miembros de la ecuación a una misma potencia.</p> 
+                <p>2) Se suprimen los signos de agrupación efectuando las operaciones indicadas.</p>
+                <p>3) Se eliminan los denominadores si los hay.</p>
+                <p>4) Se trasponen y reducen los términos.</p>
+                <p>5) Se despeja la incógnita.</p> 
+                <p>6) Se dividen ambos miembros por el Coeficiente de la incógnita luego de haber sido ésta despejada.</p>
+            </div>
+            <div>
+                <p>Las Funciones polinómicas del tipo:</p><div class="cuadro">y = ax</div>
+                <p>
+                    se llaman funciones lineales y se representan con una recta que pasa 
+                    por el o rigen de las coordenadas. Si la función es del tipo:<div class="cuadro">y= ax + b</div>                         
+                    se llama función afín y se representa con una recta cuya intersección con el eje de coordenadas 
+                    coincide con el término independiente b. Al sustituir los pares de valores en la ecuación inicial 
+                    la hacen una identidad es decir, satisfacen la ecuación. Entonces dando valores a x se obtienen 
+                    infinitos pares de valores que cumplen la ecuación. Por esto, se dice que esta ecuación es indeterminada, 
+                    como toda ecuación de primer grado con dos o más incógnitas.
+                </p>
+                <div class="cuadro">
+                    <p>2x - 5y = 0</p>
+                    <p>5y = 2x => y = 2 / 5X</p> 
+                    <p>A cada valor de 'x' resulta un valor de 'y', esto permite crear la siguiente Tabla:</p>
+                    <p>X 0 5 10 -5 -10</p>
+                    <p>Y 0 2 4  -2 -4</p>
+
+                </div>
+                
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+
+
+  
